@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
-    <link rel="stylesheet" href="~/Content/style.css" >
+    <link rel="stylesheet" href="~/Content/style.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -15,7 +15,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="~/Scripts/bootstrap.min.js"></script>
     <script src="~/Scripts/script.js"></script>
-    
+    <script src="~/Scripts/respond.js"></script>
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+
 
 </head>
 <body>
@@ -29,10 +32,10 @@
             <div class="d-flex align-items-center">
                 <a href="#"><img src="~/img/profile-icon.svg" class="log-icon icon ml-3 mr-2" alt="login and Registration icon" id="prof-icon"></a>
                 <div class="log-reg" id="login">
-                    <a href="#" class="sign roboto mr-2">Sign in</a>
-                    <a href="#" class="sign roboto mr-2">Registration</a>
+                    <a href="~/Views/Account/Login.cshtml" class="sign roboto mr-2">Sign in</a>
+                    <a href="~/Views/Account/Register.cshtml" class="sign roboto mr-2">Registration</a>
                 </div>
-                <a href="#"><img src="~/img/house.svg" class="house ml-5 mr-5" alt="Remember"></a>
+                <a href="@Url.Action("Index", "Home")"><img src="~/img/house.svg" class="house ml-5 mr-5" alt="Remember"></a>
             </div>
         </div>
         <nav class="background-white navbar navbar-expand-lg navbar-light bg-light">
@@ -45,7 +48,7 @@
                         <a class="nav-link" href="Index.html">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active ml-5">
-                        <a class="nav-link" href="vet.html">Veterinars</a>
+                        <a class="nav-link" href="@Url.Action("Veterinarian", "Home")">Veterinars</a>
                     </li>
                     <li class="nav-item dropdown active ml-5">
                         <a class="nav-link  dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dogs</a>

@@ -26,5 +26,18 @@ namespace PetPaw.Controllers
 
             return View();
         }
+
+        public ActionResult Veterinarian()
+        {
+            ViewBag.Message = "Your application description page.";
+
+            return View();
+        }
+        public ActionResult Market()
+        {
+            ViewBag.Message = "Your application description page.";
+
+            return View();
+        }
     }
 }

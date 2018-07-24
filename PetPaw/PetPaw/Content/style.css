@@ -533,10 +533,13 @@ a {
         background-color: #06BC9B;
         cursor: pointer;
     }
-
-/*media*/
-@media(max-width:768px) {
-    .footer-text {
+.productName {
+    font-size: 20px;
+    text-align: center !important;
+}
+    /*media*/
+    @media(max-width:768px) {
+        .footer-text {
         width: 0;
         max-width: none;
     }

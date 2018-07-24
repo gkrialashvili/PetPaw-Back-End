@@ -23,8 +23,8 @@
 </head>
 <body>
     <header class="fixed-top roboto">
-        <div class=" d-flex flex-row container-fluid header-color justify-content-between align-items-center">
-            <a href="Index.html"><img src="~/img/logo.svg" class="logo ml-5" alt="Pet Paw logo"></a>
+        <div class="d-flex flex-row container-fluid header-color justify-content-between align-items-center">
+            <a href="@Url.Action("Index","Home")"><img src="~/img/logo.svg" class="logo ml-5" alt="Pet Paw logo"></a>
             <div class="d-flex align-items-end">
                 <input type="search" name="search" class="search">
                 <i class="fas fa-search icon"></i>
@@ -35,7 +35,7 @@
                     <a href="~/Views/Account/Login.cshtml" class="sign roboto mr-2">Sign in</a>
                     <a href="~/Views/Account/Register.cshtml" class="sign roboto mr-2">Registration</a>
                 </div>
-                <a href="@Url.Action("Index", "Home")"><img src="~/img/house.svg" class="house ml-5 mr-5" alt="Remember"></a>
+                <a href=""><img src="~/img/house.svg" class="house ml-5 mr-5" alt="Remember"></a>
             </div>
         </div>
         <nav class="background-white navbar navbar-expand-lg navbar-light bg-light">
@@ -45,7 +45,7 @@
             <div class="collapse navbar-collapse hover-style" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto font-color">
                     <li class="nav-item active ml-5">
-                        <a class="nav-link" href="Index.html">Home<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href=@Url.Action("Index","Home")>Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active ml-5">
                         <a class="nav-link" href="@Url.Action("Veterinarian", "Home")">Veterinars</a>

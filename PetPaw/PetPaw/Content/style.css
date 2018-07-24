@@ -1,158 +1,192 @@
 body {
-	 overflow-x: hidden;
+    overflow-x: hidden;
 }
+
 .logo {
-	width: 110px;
-	transition: 0.5s;
+    width: 110px;
+    transition: 0.5s;
 }
-.logo:hover {
-	width: 120px;
-}
+
+    .logo:hover {
+        width: 120px;
+    }
+
 .cursor-default h1 {
-	cursor: default;
+    cursor: default;
 }
+
 .header-color {
-	background-color: #00352D;
-	padding: 20px;
+    background-color: #00352D;
+    padding: 20px;
 }
+
 .search {
-	height: 25px;
-	width: 400px;
-	margin-right: 2px;
-	background: none;
-	border: none;
-	border-bottom: 1px solid white;
-	color: white;
-	outline: none;
+    height: 25px;
+    width: 400px;
+    margin-right: 2px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    outline: none;
 }
-.lang-li a{
-	display: none;
-	color: #fff;
-	text-decoration: none;
-	font-size: 12px;
+
+.lang-li a {
+    display: none;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
 }
+
 .show a {
-	display: block !important;
+    display: block !important;
 }
+
 .show-log {
-	display: block !important;
+    display: block !important;
 }
+
 .border-b {
-	border-bottom: 1px solid white;
-	padding: 1px 0;
+    border-bottom: 1px solid white;
+    padding: 1px 0;
 }
+
 .icon {
-	color: white;
-	cursor: pointer;
-	width: 20px;
+    color: white;
+    cursor: pointer;
+    width: 20px;
 }
+
 .carousel-indicators .active {
     background-color: transparent !important;
     border: solid 1px white !important;
-    }
+}
+
 .carousel-indicators li {
-	border-radius: 100px !important;
-	width: 20px !important;
-	height: 20px !important;
-	background-color: #fff !important;
+    border-radius: 100px !important;
+    width: 20px !important;
+    height: 20px !important;
+    background-color: #fff !important;
 }
+
 .line {
-	border-left: solid 1px;
-	border-color: white;
-	height :50px;
-	width: 1px;
-	margin: 0 10px;
+    border-left: solid 1px;
+    border-color: white;
+    height: 50px;
+    width: 1px;
+    margin: 0 10px;
 }
+
 .roboto {
-	font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
+
 .sign {
-	color: white;
-	font-size: 12px;
-	transition:0.3s ease-in-out;
+    color: white;
+    font-size: 12px;
+    transition: 0.3s ease-in-out;
 }
-.sign:hover {
-	text-decoration: none;
-	color: white;
-	font-weight: bold;
-	font-size: 14px;
-}
+
+    .sign:hover {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
 .dropdown-menu {
-	opacity: 0.7 !important;
+    opacity: 0.7 !important;
 }
-.log-reg a{
- 	display: none;
+
+.log-reg a {
+    display: none;
 }
+
 .house {
-	width: 20px;
-	cursor: pointer;
+    width: 20px;
+    cursor: pointer;
 }
+
 .nav-size {
-	background-color: transparent !important;
+    background-color: transparent !important;
 }
 
 .background-white {
-	background-color: #fff !important;
+    background-color: #fff !important;
 }
+
 .font-color a {
-	color: #00352D !important;
+    color: #00352D !important;
 }
+
 .hover-style ul li a:hover {
-	background-color: #00352D;
-	color: #fff !important;
-	border-radius: 25px;
+    background-color: #00352D;
+    color: #fff !important;
+    border-radius: 25px;
 }
+
 .border-no {
-	border: none !important;
+    border: none !important;
 }
+
 .main-container {
-	margin: 0 !important;
-	padding: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
+
 .carousel-height {
-	margin-top: 170px !important;
-	height: 400px !important;
-	margin-bottom: 30px !important;
+    margin-top: 170px !important;
+    height: 400px !important;
 }
+
 .slide-bg {
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-	height: 100%;	
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
 }
+
 .slide-bg-1 {
-	background-image: url("../img/3.jpg");
+    background-image: url("../img/ricky-kharawala-10194-unsplash.jpg");
 }
+
 .slide-bg-2 {
-	background-image: url("../img/andre-spieker-238-unsplash.jpg");
+    background-image: url("../img/andre-spieker-238-unsplash.jpg");
 }
+
 .slide-bg-3 {
-	background-image: url("../img/david-clode-363878-unsplash.jpg");
+    background-image: url("../img/david-clode-363878-unsplash.jpg");
 }
+
 .slide-bg-4 {
-	background-image: url("../img/antonio-lapa-93448-unsplash.jpg");
+    background-image: url("../img/antonio-lapa-93448-unsplash.jpg");
 }
 
 .slider2 {
-	height: 100%;
+    height: 100%;
 }
-.slider2 div {
-	background-repeat: no-repeat;
-	background-size: contain;
-}
+
+    .slider2 div {
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
 .margin-no {
-	padding: 0 !important;
+    padding: 0 !important;
 }
-.text-btw h2{
-	font-size: 35px;
-	color: #001B17;
-	opacity: 0.7;
+
+.text-btw h2 {
+    font-size: 35px;
+    color: #001B17;
+    opacity: 0.7;
 }
+
 .video {
-	width: 100%;
-	object-fit: cover;
-	height: inherit;
+    width: 100%;
+    object-fit: cover;
+    height: inherit;
 }
+
 .pic {
     background-position: center;
     margin-right: 0px;
@@ -161,131 +195,145 @@ body {
     background-size: cover;
     z-index: 1;
 }
+
 .img-left {
     background-image: url("../img/dogpicforinf.jpg");
 }
+
 .img-right {
-	background-image: url("../img/ricky-kharawala-10194-unsplash.jpg");
+    background-image: url("../img/ricky-kharawala-10194-unsplash.jpg");
 }
+
 .insinde-cont {
-	width: 285px;
-	height: 174px;
-	z-index: 10;
-	position: relative;
-	border-radius: 50px;
-	background-color: #fff;
-	opacity: 0.6;
-	top: 50%;
-  	left: 50%;
-  	transform: translate(-50%, -50%);
-  	font-size: 23.36px;
-  	display: table;
+    width: 285px;
+    height: 174px;
+    z-index: 10;
+    position: relative;
+    border-radius: 50px;
+    background-color: #fff;
+    opacity: 0.6;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 23.36px;
+    display: table;
 }
+
 .text {
-	color: #001B17;
-	text-align:center; 
-  	vertical-align: middle;
-  	display: table-cell;
+    color: #001B17;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
 }
-.test{
-	width:100%;
-	background-color: yellow;
-	height: 318px;
+
+.test {
+    width: 100%;
+    background-color: yellow;
+    height: 318px;
 }
-.inside{
-	width:1873px;
-	background-color: red;
-	height: 318px;
-	margin-left: 15px;
+
+.inside {
+    width: 1873px;
+    background-color: red;
+    height: 318px;
+    margin-left: 15px;
 }
-.box1{
-	width:850px;
-	background-color: green;
-	height: 100%;
-	float:left;
-	background-image: url("../img/dogpicforinf.jpg");
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+
+.box1 {
+    width: 850px;
+    background-color: green;
+    height: 100%;
+    float: left;
+    background-image: url("../img/dogpicforinf.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
-.box2{
-	width:850px;
-	background-color: green;
-	height: 100%;
-	float:left;
-	margin-left: 30px;
-	background-image: url("../img/ricky-kharawala-10194-unsplash.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
+
+.box2 {
+    width: 850px;
+    background-color: green;
+    height: 100%;
+    float: left;
+    margin-left: 30px;
+    background-image: url("../img/ricky-kharawala-10194-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
 .video-parent {
-	overflow-y: hidden;
-	height: 318px;
-}
-.footer-color{
-	color: white;
-}
-.img-veterinar-1{
-	background-image: url("../img/dogpicforinf.jpg");
-	width: 197.59px; 
-	height: 209.606px;
-	margin: 24px;
-	margin-left: 38px;
-}
-.footer-text{
-	width: 100%;
-	max-width: 61%;
-	margin: 0 !important;
+    overflow-y: hidden;
+    height: 318px;
 }
 
+.footer-color {
+    color: white;
+}
 
+.img-veterinar-1 {
+    background-image: url("../img/dogpicforinf.jpg");
+    width: 197.59px;
+    height: 209.606px;
+    margin: 24px;
+    margin-left: 38px;
+}
 
-
+.footer-text {
+    width: 100%;
+    max-width: 61%;
+    margin: 0 !important;
+}
 
 /*veterinars page*/
-.foto-secction{
-	margin-top:182px;
+.foto-secction {
+    margin-top: 182px;
 }
 
-.box-shadow{
-	box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
-	background-color:#fff;
+.box-shadow {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #fff;
 }
-.clear{
-	clear:both;
-}
-.doctor-foto{
-	float:left;
-	margin:23px 20px 20px 20px;
-	max-width:219px;
-	max-height:191px;
-	width:100%;
 
+.clear {
+    clear: both;
 }
-.read-more{
-	float:right;	
+
+.doctor-foto {
+    float: left;
+    margin: 23px 20px 20px 20px;
+    max-width: 219px;
+    max-height: 191px;
+    width: 100%;
 }
-.read{
-    color:#001B17 !important;	
+
+.read-more {
+    float: right;
 }
-a{
-	text-decoration:none !important;	
+
+.read {
+    color: #001B17 !important;
+}
+
+a {
+    text-decoration: none !important;
 }
 
 /*contact*/
-.header-text{
-	font-size:30px;
-	color:#606060;
+.header-text {
+    font-size: 30px;
+    color: #606060;
 }
-.header-text2{
-	font-size:30px;
-	color:#444444;
+
+.header-text2 {
+    font-size: 30px;
+    color: #444444;
 }
-.text-in-contact{
-	color:#808080;
-	font-size:15px;
+
+.text-in-contact {
+    color: #808080;
+    font-size: 15px;
 }
 
 .form1 {
@@ -297,143 +345,199 @@ a{
     background-clip: padding-box;
     border: 1px solid #808080;
     border-radius: 0.70rem;
-    cursor:pointer;
+    cursor: pointer;
 }
-.design{
-	border: 1px solid #808080 !important;
+
+.design {
+    border: 1px solid #808080 !important;
     border-radius: 0.70rem !important;
     font-size: 1rem !important;
     line-height: 1.5 !important;
     background-clip: padding-box !important;
     padding: 0.800rem 0.75rem !important;
 }
-.contact-form{
+
+.contact-form {
     width: 100%;
     max-width: 550px;
     margin: auto;
 }
-.send-bg{
-   border: 1px solid #808080;
-   border-radius: 0.70rem;
-   background-color:#fff;
-   color: #001B17;
+
+.send-bg {
+    border: 1px solid #808080;
+    border-radius: 0.70rem;
+    background-color: #fff;
+    color: #001B17;
 }
-.contact-form2{
+
+.contact-form2 {
     width: 100%;
     max-width: 300px;
     margin: auto;
-    padding-bottom:180px;
+    padding-bottom: 180px;
 }
-.form1-bg1{
-	background-color:#DA402C;
-	width: 100%;	
+
+.form1-bg1 {
+    background-color: #DA402C;
+    width: 100%;
     border-radius: 0.70rem;
-    height:50px;
+    height: 50px;
 }
-.form1-bg2{
-	background-color:#3B5998;
-	width: 100%;	
+
+.form1-bg2 {
+    background-color: #3B5998;
+    width: 100%;
     border-radius: 0.70rem;
-    height:50px;
+    height: 50px;
 }
+
 .validation-m {
     margin-left: 5px;
     font-size: 18px;
     color: #CCD7D5;
 }
-.text-in-contact-login{
-	font-size:30px;
-	color:#444444;
+
+.text-in-contact-login {
+    font-size: 30px;
+    color: #444444;
 }
-.text-in-contact-login2{
-	font-size:19px;
-	color:#606060;
+
+.text-in-contact-login2 {
+    font-size: 19px;
+    color: #606060;
 }
-.registering-text{
-	color:#606060;
-	font-size:19px;
+
+.registering-text {
+    color: #606060;
+    font-size: 19px;
 }
-.text-login{
-	margin-top:80px;
+
+.text-login {
+    margin-top: 80px;
 }
-#icon{
-	background-image:url(../img/googleplus.svg); 
-    background-repeat: no-repeat; 
+
+#icon {
+    background-image: url(../img/googleplus.svg);
+    background-repeat: no-repeat;
     background-position: 15px 15px;
     cursor: pointer;
     background-size: 50px 18px;
 }
 
-#icon2{
-	background-image:url(../img/facebok.svg); 
-    background-repeat: no-repeat; 
+#icon2 {
+    background-image: url(../img/facebok.svg);
+    background-repeat: no-repeat;
     background-position: 15px 15px;
     cursor: pointer;
     background-size: 50px 18px;
 }
-
-
-
 
 /*Dogs page*/
 .main-category {
-	margin-top: 182px;
-	height: 100%;
-	padding-left: 0 !important;
-	padding-right: 0 !important;
-	box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 182px;
+    height: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .Filter {
-	padding-left: 35px;
-	padding-bottom: 234px;
-	font-size: 17px;
-	min-width: 257px;
-	width: 257px;
-	box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-left: 35px;
+    padding-bottom: 234px;
+    font-size: 17px;
+    min-width: 257px;
+    width: 257px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .Category-Title {
-	color: #001B17;
-	font-weight: bold;
-	font-size: 17px;
-	margin-top: 20px;
+    color: #001B17;
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 20px;
 }
+
 .category-filter h2 {
-	font-weight: bold;
-	color: #001B17;
-	text-align: center;
-	font-size: 17px;
-	margin: 22px 0;
+    font-weight: bold;
+    color: #001B17;
+    text-align: center;
+    font-size: 17px;
+    margin: 22px 0;
 }
-.category-filter h2 p {
-	line-height: 1.7px;
-}
+
+    .category-filter h2 p {
+        line-height: 1.7px;
+    }
 
 .radio label input {
-	line-height: 1.7px;
-	margin-right: 10px;
+    line-height: 1.7px;
+    margin-right: 10px;
 }
+
 .category-container {
-	margin-top: 20px;
+    margin-top: 20px;
 }
-
-
-
 
 /*Blog*/
-.dog-picture{
-	width:100%;
+.dog-picture {
+    width: 100%;
 }
 
+.homeButton {
+    background-color: transparent !important;
+    border-radius: 30% !important;
+    color: #001B17;
+    border: 1px solid #001B17 !important;
+    margin-top: 20px;
+}
 
+.buttonContainer1 {
+    padding-right: 20px !important;
+}
 
+.soc-icons {
+    width: 250px;
+    color: #fff;
+}
 
+.home {
+    border-bottom: dotted 1px #06BC9B;
+}
 
+.circle {
+    border-radius: 50%;
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+}
 
+    .circle:nth-child(1) {
+        background-color: #3664a2;
+    }
+
+    .circle:nth-child(2) {
+        background-color: #55acee;
+    }
+
+    .circle:nth-child(3) {
+        background-color: #dd4b39;
+    }
+
+    .circle:nth-child(4) {
+        background-color: #bc2a8d;
+    }
+
+    .circle:hover {
+        background-color: #06BC9B;
+        cursor: pointer;
+    }
 
 /*media*/
-@media(max-width:768px){
-.footer-text{
-	width: none;
-	max-width:none;
-	}
-} 
+@media(max-width:768px) {
+    .footer-text {
+        width: 0;
+        max-width: none;
+    }
+}

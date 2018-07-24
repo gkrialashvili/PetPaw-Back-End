@@ -219,7 +219,6 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
     <Content Include="img\andre-spieker-238-unsplash.jpg" />
     <Content Include="img\antonio-lapa-93448-unsplash.jpg" />
     <Content Include="img\david-clode-363878-unsplash.jpg" />

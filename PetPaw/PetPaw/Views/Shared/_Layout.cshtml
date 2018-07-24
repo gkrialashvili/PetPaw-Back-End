@@ -4,8 +4,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
     <link rel="stylesheet" href="~/Content/style.css" >
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -23,18 +21,18 @@
 <body>
     <header class="fixed-top roboto">
         <div class=" d-flex flex-row container-fluid header-color justify-content-between align-items-center">
-            <a href="Index.html"><img src="~/images/logo.svg" class="logo ml-5" alt="Pet Paw logo"></a>
+            <a href="Index.html"><img src="~/img/logo.svg" class="logo ml-5" alt="Pet Paw logo"></a>
             <div class="d-flex align-items-end">
                 <input type="search" name="search" class="search">
                 <i class="fas fa-search icon"></i>
             </div>
             <div class="d-flex align-items-center">
-                <a href="#"><img src="img/profile-icon.svg" class="log-icon icon ml-3 mr-2" alt="login and Registration icon" id="prof-icon"></a>
+                <a href="#"><img src="~/img/profile-icon.svg" class="log-icon icon ml-3 mr-2" alt="login and Registration icon" id="prof-icon"></a>
                 <div class="log-reg" id="login">
                     <a href="#" class="sign roboto mr-2">Sign in</a>
                     <a href="#" class="sign roboto mr-2">Registration</a>
                 </div>
-                <a href="#"><img src="img/house.svg" class="house ml-5 mr-5" alt="Remember"></a>
+                <a href="#"><img src="~/img/house.svg" class="house ml-5 mr-5" alt="Remember"></a>
             </div>
         </div>
         <nav class="background-white navbar navbar-expand-lg navbar-light bg-light">
@@ -161,8 +159,5 @@
         </div>
         <!-- Footer Links -->
     </footer>
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
 </body>
 </html>

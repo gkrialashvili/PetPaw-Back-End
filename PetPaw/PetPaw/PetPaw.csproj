@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -219,6 +220,19 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="img\andre-spieker-238-unsplash.jpg" />
+    <Content Include="img\antonio-lapa-93448-unsplash.jpg" />
+    <Content Include="img\david-clode-363878-unsplash.jpg" />
+    <Content Include="img\dogpicforinf.jpg" />
+    <Content Include="img\facebok.svg" />
+    <Content Include="img\geran-de-klerk-351820-unsplash.jpg" />
+    <Content Include="img\googleplus.svg" />
+    <Content Include="img\house.svg" />
+    <Content Include="img\jeff-nissen-567973-unsplash.jpg" />
+    <Content Include="img\justin-veenema-156591-unsplash.jpg" />
+    <Content Include="img\logo.svg" />
+    <Content Include="img\profile-icon.svg" />
+    <Content Include="img\ricky-kharawala-10194-unsplash.jpg" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />

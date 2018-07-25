@@ -81,6 +81,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -199,12 +201,32 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\User.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\PetPawDataBase.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PetPawDataBase.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PetPawDataBase.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PetPawDataBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PetPawDataBase.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PetPawDataBase.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Register.cs" />
+    <Compile Include="Models\user.cs">
+      <DependentUpon>PetPawDataBase.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -232,6 +254,17 @@
     <Content Include="img\logo.svg" />
     <Content Include="img\profile-icon.svg" />
     <Content Include="img\ricky-kharawala-10194-unsplash.jpg" />
+    <Content Include="img\Vet.jpg" />
+    <Content Include="Models\PetPawDataBase.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PetPawDataBase.edmx</DependentUpon>
+      <LastGenOutput>PetPawDataBase.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\PetPawDataBase.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PetPawDataBase.edmx</DependentUpon>
+      <LastGenOutput>PetPawDataBase.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -251,6 +284,13 @@
     <Content Include="Content\bootstrap-reboot.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap.min.css.map" />
+    <EntityDeploy Include="Models\PetPawDataBase.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>PetPawDataBase.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\PetPawDataBase.edmx.diagram">
+      <DependentUpon>PetPawDataBase.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -300,6 +340,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Veterinarian.cshtml" />
     <Content Include="Views\Home\Market.cshtml" />
+    <Content Include="Views\Account\Registeration.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -311,6 +352,9 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -39,6 +39,29 @@ namespace PetPaw.Controllers
                 _signInManager = value; 
             }
         }
+        [HttpPost]
+        public ActionResult Registeration(Register userModel)
+        {
+
+            using (var db = new PetPawEntities())
+            {
+                user user = new user
+                {
+                    Email = userModel.Email,
+                    firstName = userModel.firstName,
+                    lastName = userModel.lastName,
+                    Password = userModel.Password,
+                    Date = DateTime.Now
+                };
+                db.users.Add(user);
+                db.SaveChanges();
+            }
+            
+            
+            return View();
+         
+        }
+
 
         public ApplicationUserManager UserManager
         {

@@ -43,13 +43,13 @@ namespace PetPaw.Controllers
         public ActionResult Registeration(Register userModel)
         {
 
-            using (var db = new PetPawEntities())
+            using (var db = new PetPawEntities1())
             {
                 user user = new user
                 {
                     Email = userModel.Email,
-                    firstName = userModel.firstName,
-                    lastName = userModel.lastName,
+                    firstName = userModel.FirstName,
+                    lastName = userModel.LastName,
                     Password = userModel.Password,
                     Date = DateTime.Now
                 };

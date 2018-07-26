@@ -201,31 +201,30 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Controllers\User.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\PetPawDataBase.Context.cs">
+    <Compile Include="Models\petpaw.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>PetPawDataBase.Context.tt</DependentUpon>
+      <DependentUpon>petpaw.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\PetPawDataBase.cs">
+    <Compile Include="Models\petpaw.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>PetPawDataBase.tt</DependentUpon>
+      <DependentUpon>petpaw.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\PetPawDataBase.Designer.cs">
+    <Compile Include="Models\petpaw.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>PetPawDataBase.edmx</DependentUpon>
+      <DependentUpon>petpaw.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\Register.cs" />
     <Compile Include="Models\user.cs">
-      <DependentUpon>PetPawDataBase.tt</DependentUpon>
+      <DependentUpon>petpaw.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -255,15 +254,15 @@
     <Content Include="img\profile-icon.svg" />
     <Content Include="img\ricky-kharawala-10194-unsplash.jpg" />
     <Content Include="img\Vet.jpg" />
-    <Content Include="Models\PetPawDataBase.Context.tt">
+    <Content Include="Models\petpaw.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>PetPawDataBase.edmx</DependentUpon>
-      <LastGenOutput>PetPawDataBase.Context.cs</LastGenOutput>
+      <DependentUpon>petpaw.edmx</DependentUpon>
+      <LastGenOutput>petpaw.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\PetPawDataBase.tt">
+    <Content Include="Models\petpaw.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>PetPawDataBase.edmx</DependentUpon>
-      <LastGenOutput>PetPawDataBase.cs</LastGenOutput>
+      <DependentUpon>petpaw.edmx</DependentUpon>
+      <LastGenOutput>petpaw.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
@@ -284,12 +283,12 @@
     <Content Include="Content\bootstrap-reboot.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap.min.css.map" />
-    <EntityDeploy Include="Models\PetPawDataBase.edmx">
+    <EntityDeploy Include="Models\petpaw.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>PetPawDataBase.Designer.cs</LastGenOutput>
+      <LastGenOutput>petpaw.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\PetPawDataBase.edmx.diagram">
-      <DependentUpon>PetPawDataBase.edmx</DependentUpon>
+    <Content Include="Models\petpaw.edmx.diagram">
+      <DependentUpon>petpaw.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />

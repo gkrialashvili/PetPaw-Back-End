@@ -13,10 +13,10 @@ namespace PetPaw.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class PetPawEntities : DbContext
+    public partial class PetPawEntities1 : DbContext
     {
-        public PetPawEntities()
-            : base("name=PetPawEntities")
+        public PetPawEntities1()
+            : base("name=PetPawEntities1")
         {
         }
     

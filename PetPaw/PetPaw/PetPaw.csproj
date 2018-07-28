@@ -200,9 +200,11 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Filter\RoleFilter.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helper\EmailValidator.cs" />
     <Compile Include="Helper\GetHashAndRandom32.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -264,6 +266,7 @@
       <DependentUpon>PetPaw.edmx</DependentUpon>
       <LastGenOutput>PetPaw.cs</LastGenOutput>
     </Content>
+    <Content Include="Scripts\Account\AccountJS.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />

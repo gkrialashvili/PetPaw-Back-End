@@ -6,27 +6,35 @@ using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using PetPaw.Filter;
 
 namespace PetPaw.Controllers
 {
     public class AccountController : Controller
     {
+        [RoleFilter]
         [HttpGet]
         public ActionResult Registration()
         {
             return View();
         }
 
+        [RoleFilter]
         [HttpPost]
         public ActionResult Registration(Register userModel)
         {
 
-            if (ModelState.IsValid){
+            if (ModelState.IsValid)
+            {
                 using (var db = new PetPawEntities())
                 {
                     TimeSpan t = DateTime.Now - userModel.Birthdate;
                     DateTime zeroTime = new DateTime(1, 1, 1);
                     int years = (zeroTime + t).Year - 1;
+                    if (db.users.Any(x => x.Email == userModel.Email))
+                    {
+                        return Content("მითითებული მეილით უკვე დარეგისტრირებულია მომხმარებელი");
+                    }
                     user user = new user
                     {
                         Email = userModel.Email,
@@ -42,18 +50,53 @@ namespace PetPaw.Controllers
                     };
                     db.users.Add(user);
                     db.SaveChanges();
+                    return RedirectToAction("Login", "Account");
                 }
-                Redirect("/Home");
-                return null;
             }
             else
             {
                 return View(userModel);
             }
         }
-        public ActionResult Login ()
+        [RoleFilter]
+        [HttpGet]
+        public ActionResult Login()
         {
             return View();
+        }
+        [RoleFilter]
+        [HttpPost]
+        public JsonResult Login(string email, string password)
+        {
+            if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password))
+            {
+                return Json(1);
+            }
+
+            using (var db = new PetPawEntities())
+            {
+                try
+                {
+                    if (!db.users.Any(x => x.Email == email))
+                    {
+                        return Json(2);
+                    }
+
+                    if (Helper.GetHashAndRandom32.MD5Hash(db.users.FirstOrDefault(x => x.Email == email).Password) !=
+                        Helper.GetHashAndRandom32.MD5Hash(password))
+                    {
+                        return Json(3);
+                    }
+
+                    Session["user"] = db.users.FirstOrDefault(x => x.Email == email);
+                    return Json(0);
+                }
+                catch
+                {
+                    return Json(4);
+                }
+
+            }
         }
     }
 }

@@ -22,8 +22,11 @@ namespace PetPaw.Controllers
         {
 
             if (ModelState.IsValid){
-                using (var db = new PetPawEntities1())
+                using (var db = new PetPawEntities())
                 {
+                    TimeSpan t = DateTime.Now - userModel.Birthdate;
+                    DateTime zeroTime = new DateTime(1, 1, 1);
+                    int years = (zeroTime + t).Year - 1;
                     user user = new user
                     {
                         Email = userModel.Email,
@@ -31,10 +34,11 @@ namespace PetPaw.Controllers
                         lastName = userModel.LastName,
                         Password = userModel.Password,
                         Date = DateTime.Now,
-                        resetPassword = "",
+                        resetPassword = Helper.GetHashAndRandom32.Random32(),
                         Sex = userModel.Gender == 1 ? "male" : "keso",
-                        Age = 20,
-                        profilePicture = ""
+                        Age = years,
+                        profilePicture = Helper.GetHashAndRandom32.Random32(),
+                        phoneNumber = userModel.phoneNumber
                     };
                     db.users.Add(user);
                     db.SaveChanges();

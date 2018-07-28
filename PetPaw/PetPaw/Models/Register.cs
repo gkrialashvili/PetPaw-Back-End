@@ -22,7 +22,7 @@ namespace PetPaw.Models
         public string Email { get; set; }
         [Required(ErrorMessage = "Enter Password")]
         [DataType(DataType.Password)]
-        [StringLength(100, ErrorMessage = "The {0} must be {1} at least {2} characters long.", MinimumLength = 6)]
+        [StringLength(100, ErrorMessage = "The {0} must be maximum {1} minimum {2} characters long.", MinimumLength = 6)]
         [Display(Name = "Password")]
         public string Password { get; set; }
         [Required(ErrorMessage = "Repeat Password")]
@@ -34,5 +34,9 @@ namespace PetPaw.Models
         public DateTime Birthdate { get; set; }
         [Required(ErrorMessage = "Enter Gender")]
         public int Gender { get; set; }
+        [Required(ErrorMessage = "Enter Phone Number")]
+        [StringLength(15, ErrorMessage = "The {0} must be maximum {1} minimum {2} characters long.", MinimumLength = 9)]
+        [DataType(DataType.PhoneNumber)]
+        public string phoneNumber { get; set; }
     }
 }

@@ -44,6 +44,12 @@
                 </div>
             </div>
             <div class="form-group">
+                <input type="tel" class="form-control form1 text-center" id="phoneNumber" placeholder="Phone Number" name="phoneNumber">
+                <div class="col-md-10">
+                    @Html.ValidationMessageFor(model => model.phoneNumber, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
                 <input type="email" class="form-control form1 text-center" id="email" placeholder="E-mail" name="Email">
                 <div class="col-md-10">
                     @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })

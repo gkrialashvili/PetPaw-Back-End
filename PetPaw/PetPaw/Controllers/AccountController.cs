@@ -40,7 +40,7 @@ namespace PetPaw.Controllers
                         Email = userModel.Email,
                         firstName = userModel.FirstName,
                         lastName = userModel.LastName,
-                        Password = userModel.Password,
+                        Password = Helper.GetHashAndRandom32.MD5Hash(userModel.Password),
                         Date = DateTime.Now,
                         resetPassword = Helper.GetHashAndRandom32.Random32(),
                         Sex = userModel.Gender == 1 ? "male" : "keso",
@@ -82,14 +82,13 @@ namespace PetPaw.Controllers
                         return Json(2);
                     }
 
-                    if (Helper.GetHashAndRandom32.MD5Hash(db.users.FirstOrDefault(x => x.Email == email).Password) !=
+                    if (db.users.FirstOrDefault(x => x.Email == email).Password ==
                         Helper.GetHashAndRandom32.MD5Hash(password))
                     {
-                        return Json(3);
+                        Session["user"] = db.users.FirstOrDefault(x => x.Email == email);
+                        return Json(0);
                     }
-
-                    Session["user"] = db.users.FirstOrDefault(x => x.Email == email);
-                    return Json(0);
+                    return Json(3);
                 }
                 catch
                 {

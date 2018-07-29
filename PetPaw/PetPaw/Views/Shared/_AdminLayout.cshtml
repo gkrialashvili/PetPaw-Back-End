@@ -13,6 +13,7 @@
     <link href="~/Content/bootstrap-reboot.css" rel="stylesheet" />
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
     <link href="~/Content/bootstrap-grid.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link href="~/Content/Admin/Admin.css" rel="stylesheet" />
 </head>
 <body>
@@ -24,6 +25,7 @@
     </nav>
     <div>
         <div class="sidenav">
+            <a href="@Url.Action("Index", "Home")">Home Page</a>
             <a href="@Url.Action("Index", "Admin")">Users List</a>
             <a href="@Url.Action("AddPicture", "Admin")">AddSliderPics</a>
             <a href="#clients">Clients</a>
@@ -33,5 +35,9 @@
             @RenderBody()
         </div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="~/Scripts/Admin/AdminJS.js"></script>
+
 </body>
 </html>

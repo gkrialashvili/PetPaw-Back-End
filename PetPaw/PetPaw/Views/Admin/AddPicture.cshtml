@@ -4,5 +4,24 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h2>AddPicture</h2>
+
+<div class="customRow pt-3">
+    <div class="form-group" style="width: 300px">
+        <input type="file" class="form-control addFile" />
+    </div>
+    <div class="form-group" style="width: 300px">
+        <input type="text" class="form-control" id="description" placeholder="Description" />
+    </div>
+</div>
+<div class="row" style="margin-left: 10px">
+    <div class="form-group">
+        <span class="fa fa-plus" aria-hidden="true" style="font-size: 20px; cursor: pointer;" id="addPictureForm"></span>
+    </div>
+</div>
+<div class="row" style="margin-left: 10px; margin-top:20px">
+    <button class="btn btn-success" id="upload" type="submit">ატვირთვა</button>
+</div>
+
+
+
 

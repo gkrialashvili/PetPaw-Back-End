@@ -26,5 +26,7 @@ namespace PetPaw.Models
         }
     
         public virtual DbSet<user> users { get; set; }
+        public virtual DbSet<Slider> Sliders { get; set; }
+        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
     }
 }

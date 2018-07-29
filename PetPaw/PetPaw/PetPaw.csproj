@@ -227,6 +227,12 @@
       <DependentUpon>PetPaw.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\Register.cs" />
+    <Compile Include="Models\Slider.cs">
+      <DependentUpon>PetPaw.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sysdiagram.cs">
+      <DependentUpon>PetPaw.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\user.cs">
       <DependentUpon>PetPaw.tt</DependentUpon>
     </Compile>
@@ -243,7 +249,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\style.css" />
     <Content Include="favicon.ico" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="img\andre-spieker-238-unsplash.jpg" />
     <Content Include="img\antonio-lapa-93448-unsplash.jpg" />
@@ -270,6 +276,7 @@
       <LastGenOutput>PetPaw.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\Account\AccountJS.js" />
+    <Content Include="Scripts\Admin\AdminJS.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -343,11 +350,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\Upload\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />

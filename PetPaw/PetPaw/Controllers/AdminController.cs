@@ -19,5 +19,10 @@ namespace PetPaw.Controllers
             var users = _db.users.ToList();
             return View(users);
         }
+
+        public ActionResult AddPicture()
+        {
+            return View();
+        }
     }
 }

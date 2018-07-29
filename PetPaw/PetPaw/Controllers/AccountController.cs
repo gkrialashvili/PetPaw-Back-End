@@ -58,6 +58,7 @@ namespace PetPaw.Controllers
                 return View(userModel);
             }
         }
+
         [RoleFilter]
         [HttpGet]
         public ActionResult Login()

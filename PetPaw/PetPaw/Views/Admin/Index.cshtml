@@ -1,8 +1,81 @@
-﻿
+﻿@model IEnumerable<PetPaw.Models.user>
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
-<link href="~/Content/Admin/Admin.css" rel="stylesheet" />
+
+<div id="userTable">
+    <table class="table table-bordered">
+        <tr class="pt-2">
+            <th>
+                ID
+            </th>
+            <th>
+                FirstName
+            </th>
+            <th>
+                LastName
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                CreateDate
+            </th>
+            <th>
+                Age
+            </th>
+            <th>
+                Sex
+            </th>
+            <th>
+                PhoneNumber
+            </th>
+            <th>
+                Role
+            </th>
+            <th>
+
+            </th>
+        </tr>
+        @{
+
+            foreach (var item in @Model)
+            {
+                <tr data-id="@item.ID">
+                    <td data-id="@item.ID">
+                        @item.ID
+                    </td>
+                    <td>
+                        @item.firstName
+                    </td>
+                    <td>
+                        @item.lastName
+                    </td>
+                    <td>
+                        @item.Email
+                    </td>
+                    <td>
+                        @item.Date
+                    </td>
+                    <td>
+                        @item.Age
+                    </td>
+                    <td>
+                        @item.Sex
+                    </td>
+                    <td>
+                        @item.phoneNumber
+                    </td>
+                    <td>
+                        @item.Role
+                    </td>
+                    <td></td>
+                </tr>
+            }
+
+        }
+    </table>
+</div>
 
 

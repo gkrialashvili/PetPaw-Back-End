@@ -13,17 +13,18 @@
     <link href="~/Content/bootstrap-reboot.css" rel="stylesheet" />
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
     <link href="~/Content/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="~/Content/Admin/Admin.css" rel="stylesheet" />
 </head>
 <body>
     <nav class="">
         <ul>
-            <li><a>Hello @userInitials</a></li>
+            <li><a class="link">Hello @userInitials</a></li>
             <li style="float: right"><a class="active" href="@Url.Action("Logout","Account")">Log out</a></li>
         </ul>
     </nav>
     <div>
         <div class="sidenav">
-            <a href="#about">About</a>
+            <a href="@Url.Action("Index", "Admin")">Users List</a>
             <a href="#services">Services</a>
             <a href="#clients">Clients</a>
             <a href="#contact">Contact</a>

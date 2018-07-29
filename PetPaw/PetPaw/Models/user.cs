@@ -25,5 +25,6 @@ namespace PetPaw.Models
         public string Sex { get; set; }
         public string profilePicture { get; set; }
         public string phoneNumber { get; set; }
+        public int Role { get; set; }
     }
 }

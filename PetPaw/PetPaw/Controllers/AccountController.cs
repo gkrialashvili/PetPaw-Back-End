@@ -46,7 +46,8 @@ namespace PetPaw.Controllers
                         Sex = userModel.Gender == 1 ? "male" : "keso",
                         Age = years,
                         profilePicture = Helper.GetHashAndRandom32.Random32(),
-                        phoneNumber = userModel.phoneNumber
+                        phoneNumber = userModel.phoneNumber,
+                        Role = 50
                     };
                     db.users.Add(user);
                     db.SaveChanges();
@@ -97,6 +98,12 @@ namespace PetPaw.Controllers
                 }
 
             }
+        }
+
+        public ActionResult Logout()
+        {
+            Session["user"] = null;
+            return RedirectToAction("Index", "Home");
         }
     }
 }

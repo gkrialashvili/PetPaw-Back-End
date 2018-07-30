@@ -533,10 +533,12 @@ a {
         background-color: #06BC9B;
         cursor: pointer;
     }
+
 .productName {
     font-size: 20px;
     text-align: center !important;
 }
+
 .LogedIn {
     background-color: #00A081;
     border-radius: 50%;
@@ -544,35 +546,48 @@ a {
     height: 30px;
     text-align: center;
     line-height: 30px;
-    cursor:pointer;
-
+    cursor: pointer;
 }
+
+.unauthenticated .LogedIn {
+    display: none;
+}
+
+.authenticated .LogedIn {
+    display: initial;
+}
+
 .profileInitials {
     font-family: 'MyriadPro-Regular';
     color: white;
     font-size: 15px;
-    padding-right:1px;
+    padding-right: 1px;
+}
 
-}
 .LogedIn:hover {
-    background-color:aqua;
+    background-color: aqua;
 }
+
 @font-face {
     font-family: 'HoboStd';
     src: url('../fonts/HoboStd.eot') format('embedded-opentype'), url('../fonts/HoboStd.svg') format('svg'), url('../fonts/HoboStd.ttf') format('truetype'), url('../fonts/HoboStd.woff') format('woff'), url('../fonts/HoboStd.woff2') format('woff2');
 }
+
 @font-face {
     font-family: 'MyriadPro-Bold';
     src: url('../fonts/MyriadPro-Bold.eot') format('embedded-opentype'), url('../fonts/MyriadPro-Bold.svg') format('svg'), url('../fonts/MyriadPro-Bold.ttf') format('truetype'), url('../fonts/MyriadPro-Bold.woff') format('woff'), url('../fonts/MyriadPro-Bold.woff2') format('woff2');
 }
+
 @font-face {
     font-family: 'Roboto-Bold';
     src: url('../fonts/Roboto-Bold.eot') format('embedded-opentype'), url('../fonts/Roboto-Bold.svg') format('svg'), url('../fonts/Roboto-Bold.ttf') format('truetype'), url('../fonts/Roboto-Bold.woff') format('woff'), url('../fonts/Roboto-Bold.woff2') format('woff2');
 }
+
 @font-face {
     font-family: 'Roboto-Regular';
     src: url('../fonts/Roboto-Regular.eot') format('embedded-opentype'), url('../fonts/Roboto-Regular.svg') format('svg'), url('../fonts/Roboto-Regular.ttf') format('truetype'), url('../fonts/Roboto-Regular.woff') format('woff'), url('../fonts/Roboto-Regular.woff2') format('woff2');
 }
+
 @font-face {
     font-family: 'MyriadPro-Regular';
     src: url('../fonts/MyriadPro-Regular.eot') format('embedded-opentype'), url('../fonts/MyriadPro-Regular.svg') format('svg'), url('../fonts/MyriadPro-Regular.ttf') format('truetype'), url('../fonts/MyriadPro-Regular.woff') format('woff'), url('../fonts/MyriadPro-Regular.woff2') format('woff2');

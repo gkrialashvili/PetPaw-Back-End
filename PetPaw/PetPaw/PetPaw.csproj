@@ -211,6 +211,9 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Market.cs">
+      <DependentUpon>PetPaw.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\PetPaw.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -330,6 +333,7 @@
     <Content Include="fonts\MyriadPro-Regular.woff" />
     <Content Include="fonts\MyriadPro-Regular.woff2" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\Home\HomeJS.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -378,6 +382,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\Market\" />
     <Folder Include="Content\Upload\" />
   </ItemGroup>
   <ItemGroup>

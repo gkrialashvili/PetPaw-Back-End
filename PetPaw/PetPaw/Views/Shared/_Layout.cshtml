@@ -44,11 +44,12 @@
                         if (user?.Role == 100)
                         {
                             <a href="@Url.Action("Index", "Admin")" class="sign roboto mr-2">Admin Panel</a>
+                            <a href="@Url.Action("AddPet", "Home")" class="sign roboto mr-2">Add Pet</a>
                             <a href="@Url.Action("Logout", "Account")" class="sign roboto mr-2">Log Out</a>
                         }
                         else if (user != null)
                         {
-                            <a href="@Url.Action("AddProduct", "Account")" class="sign roboto mr-2">Add product</a>
+                            <a href="@Url.Action("AddPet", "Home")" class="sign roboto mr-2">Add Pet</a>
                             <a href="@Url.Action("Logout", "Account")" class="sign roboto mr-2">Log Out</a>
                         }
                         else
@@ -201,5 +202,8 @@
         </div>
         <!-- Footer Links -->
     </footer>
+
+
+    <script src="~/Scripts/Home/HomeJS.js"></script>
 </body>
 </html>

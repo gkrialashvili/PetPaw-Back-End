@@ -54,5 +54,10 @@ namespace PetPaw.Controllers
 
             return View();
         }
+
+        public ActionResult AddPet()
+        {
+            return View();
+        }
     }
 }

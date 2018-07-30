@@ -1,0 +1,158 @@
+﻿
+@{
+    ViewBag.Title = "AddPet";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="foto-secction container-fluid">
+    <h4 class="add-advertisement roboto text-center pb-4 pt-2"> Add Pet </h4>
+
+    <div class="box-shadow container-fluid d-flex pt-5 pb-5">
+
+        <div class="Filter1">
+            <div class="section-in-add1">
+                <img class="star-foto d-inline" src="/img/asterisk.svg" alt="Star">
+                <p class="category-p d-inline pl-2 roboto"> Category </p>
+            </div>
+
+            <div class="section-in-add">
+                <img class="star-foto d-inline" src="/img/asterisk.svg" alt="Star">
+                <p class="category-p d-inline roboto pl-2"> Advertisment type </p>
+            </div>
+
+            <div class="section-in-add">
+                <img class="star-foto d-inline" src="/img/asterisk.svg" alt="Star">
+                <p class="category-p d-inline roboto pl-2"> Tittle </p>
+            </div>
+
+            <div class="section-in-add">
+                <img class="star-foto d-inline" src="/img/asterisk.svg" alt="Star">
+                <p class="category-p d-inline roboto pl-2"> Location </p>
+            </div>
+
+            <div class="section-in-add">
+                <img class="star-foto d-inline" src="/img/asterisk.svg" alt="Star">
+                <p class="category-p d-inline roboto pl-2"> Contact Person </p>
+            </div>
+
+            <div class="section-in-add">
+                <img class="star-foto d-inline" src="/img/asterisk.svg" alt="Star">
+                <p class="category-p d-inline roboto pl-2"> Phone Number </p>
+            </div>
+
+            <div class="section-in-add">
+                <img class="star-foto d-inline" src="/img/asterisk.svg" alt="Star">
+                <p class="category-p d-inline roboto pl-2"> Price </p>
+            </div>
+
+            <div class="section-in-add">
+                <img class="star-foto d-inline" src="/img/asterisk.svg" alt="Star">
+                <p class="category-p d-inline roboto pl-2"> Age </p>
+            </div>
+
+            <div class="section-in-add">
+                <img class="star-foto d-inline" src="/img/asterisk.svg" alt="Star">
+                <p class="category-p d-inline roboto pl-2"> Breed </p>
+            </div>
+
+            <div class="section-in-add">
+                <img class="star-foto d-inline" src="/img/asterisk.svg" alt="Star">
+                <p class="category-p d-inline roboto pl-2"> Gender </p>
+            </div>
+
+            <div class="section-in-add">
+                <img class="star-foto d-inline" src="/img/asterisk.svg" alt="Star">
+                <p class="category-p d-inline roboto pl-2"> Description </p>
+            </div>
+
+            <div class="section-in-add2">
+                <img class="star-foto d-inline" src="/img/asterisk.svg" alt="Star">
+                <p class="category-p d-inline roboto pl-2"> Upload Photo </p>
+            </div>
+        </div>
+
+        <div class="container roboto form-add">
+            <form>
+                <div class="form-group d-flex flex-nowrap">
+                    <select class="form-control" style="border-radius: 0.70rem;" id="exampleFormControlSelect1">
+                        <option>Select</option>
+                        <option>Dogs</option>
+                        <option>Cats</option>
+                        <option>Small Pets</option>
+                        <option>Fishes</option>
+                    </select>
+                </div>
+
+                <div class="form-group pt-3 d-flex flex-nowrap">
+                    <div class="radio d-inline">
+                        <label><input type="radio" name="optradio"> Sell</label>
+                    </div>
+                    <div class="radio d-inline pl-3">
+                        <label><input type="radio" name="optradio"> Purchase</label>
+                    </div>
+                </div>
+
+                <div class="form-group pt-2 d-flex flex-nowrap">
+                    <input type="text" class="form-control" style="border-radius: 0.70rem;" id="tittletext" name="text">
+                </div>
+
+                <div class="form-group pt-3 d-flex flex-nowrap">
+                    <select class="form-control" style="border-radius: 0.70rem;" id="cityselect">
+                        <option>City,region or Village</option>
+                        <option>City</option>
+                        <option>Region</option>
+                        <option>Village</option>
+                    </select>
+                </div>
+
+                <div class="form-group pt-3 d-flex flex-nowrap">
+                    <input type="text" class="form-control" style="border-radius: 0.70rem;" id="contactpersontext" name="text">
+                </div>
+
+                <div class="form-group pt-2 d-flex flex-nowrap">
+                    <select class="form-control d-inline small-form" id="numberselect">
+                        <option>598</option>
+                        <option>599</option>
+                        <option>593</option>
+                        <option>568</option>
+                    </select>
+
+                    <input type="Number" class="form-control medium-form d-inline ml-3" id="mobilenumber" name="number">
+                </div>
+
+                <div class="form-group pt-2 d-flex flex-nowrap">
+                    <input type="Number" class="form-control d-inline medium-form" id="price" name="number">
+
+                    <select class="form-control d-inline ml-3 small-form" id="priceselect">
+                        <option>GEL</option>
+                        <option>USD</option>
+                    </select>
+                </div>
+
+                <div class="form-group pt-3 d-flex flex-nowrap">
+                    <input type="Number" class="form-control d-inline medium-form" id="age" name="number">
+                </div>
+
+                <div class="form-group pt-2 d-flex flex-nowrap">
+                    <input type="text" class="form-control d-inline medium-form" id="breedtext" name="text">
+                </div>
+
+                <div class="form-group pt-3 d-flex flex-nowrap">
+                    <input type="text" class="form-control d-inline medium-form" id="gendertext" name="text">
+                </div>
+
+                <div class="form-group pt-4 d-flex flex-nowrap">
+                    <textarea class="form-control" style="border-radius: 0.70rem;" rows="5" id="comment"></textarea>
+                </div>
+
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                    <label class="custom-file-label medium-form" for="validatedCustomFile"></label>
+                    <div class="invalid-feedback">Example invalid custom file feedback</div>
+                </div>
+
+                <button type="submit" class="btn btn-primary save-bg ml-auto d-flex mt-5">Add</button>
+            </form>
+        </div>
+    </div>
+</section>

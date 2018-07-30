@@ -374,6 +374,7 @@
     <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="Views\Admin\AddPicture.cshtml" />
     <Content Include="Views\Admin\ManagePictures.cshtml" />
+    <Content Include="Views\Home\AddPet.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

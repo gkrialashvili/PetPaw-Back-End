@@ -39,5 +39,17 @@ namespace PetPaw.Controllers
 
             return View();
         }
+        public ActionResult VetDetailed()
+        {
+            ViewBag.Message = "Your application description page.";
+
+            return View();
+        }
+        public ActionResult Contacts()
+        {
+            ViewBag.Message = "Your application description page.";
+
+            return View();
+        }
     }
 }

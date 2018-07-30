@@ -7,7 +7,7 @@
     <div class="box-shadow">
         <form class="contact-form container" action="/Account/Registration" method="post" style="padding-top:100px;">
             <h3 class="header-text float-left pb-3"> Registration </h3>
-            <h3 class="header-text2 float-right pb-3"> Log In </h3>
+            <a href="@Url.Action("Login", "Account")" class="header-text2 float-right pb-3"> Log In </a>
             <div class="form-group">
                 <input type="text" class="form-control form1 text-center" id="name" placeholder="Name" name="firstName">
                 <div class="col-md-10">
@@ -37,7 +37,8 @@
                 <select class="design text-center" style="width:100%;" id="exampleSelect1" name="Gender">
                     <option style="display:none">Gender</option>
                     <option value="1">Male</option>
-                    <option value="2">Keso</option>
+                    <option value="2">Female</option>
+                    <option value="3">Keso</option>
                 </select>
                 <div class="col-md-10">
                     @Html.ValidationMessageFor(model => model.Gender, "", new { @class = "text-danger" })

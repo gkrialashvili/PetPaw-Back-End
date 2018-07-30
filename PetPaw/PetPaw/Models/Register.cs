@@ -27,7 +27,7 @@ namespace PetPaw.Models
 
         [Required(ErrorMessage = "Enter Password")]
         [DataType(DataType.Password)]
-        [StringLength(100, ErrorMessage = "The {0} must be maximum {1} minimum {2} characters long.", MinimumLength = 6)]
+        [StringLength(100, ErrorMessage = "The {0} must be minimum {2} characters long.", MinimumLength = 6)]
         [Display(Name = "Password")]
         public string Password { get; set; }
 
@@ -44,7 +44,6 @@ namespace PetPaw.Models
         public int Gender { get; set; }
 
         [Required(ErrorMessage = "Enter Phone Number")]
-        [StringLength(15, ErrorMessage = "The {0} must be maximum {1} minimum {2} characters long.", MinimumLength = 9)]
         [DataType(DataType.PhoneNumber)]
         public string phoneNumber { get; set; }
     }

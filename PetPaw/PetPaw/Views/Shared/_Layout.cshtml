@@ -2,7 +2,7 @@
 @{
     var user = Session["user"] as user;
     var authenticationStatusClass = user == null ? "unauthenticated" : "authenticated";
-    string userInitials = user == null ? "": user.firstName?.First()+ "." + user.lastName.First() + ".";
+    string userInitials = user == null ? "":  user.firstName?.First() + "" + user.lastName.First();
 }
 <!DOCTYPE html>
 <html>
@@ -115,15 +115,15 @@
                             <a class="dropdown-item" href="#">Sell</a>
                         </div>
                     </li>
-                    <li class="nav-item active ml-5">
+                    @*<li class="nav-item active ml-5">
                         <a class="nav-link" href="blog.html">Blog<span class="sr-only">(current)</span></a>
-                    </li>
+                    </li>*@
                     <li class="nav-item active ml-5">
-                        <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="@Url.Action("Contacts","")>Contact <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item active ml-5">
+                    @*<li class="nav-item active ml-5">
                         <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
-                    </li>
+                    </li>*@
                 </ul>
             </div>
         </nav>
@@ -189,7 +189,7 @@
                     <h6 class="text-uppercase font-weight-bold footer-color">Social Networks</h6>
                     <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 45px; background-color: white">
                     <div class="soc-icons d-flex flex-row justify-content-between">
-                        <div class="circle"><i class="fab fa-facebook-f"></i></div>
+                        <div href="https://www.facebook.com/Pet-Paw-215967082554392/" class="circle"><i class="fab fa-facebook-f"></i></div>
                         <div class="circle"><i class="fab fa-twitter"></i></div>
                         <div class="circle"><i class="fab fa-google-plus-g"></i></div>
                         <div class="circle"><i class="fab fa-instagram"></i></div>

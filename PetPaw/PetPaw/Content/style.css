@@ -137,6 +137,7 @@ body {
 .carousel-height {
     margin-top: 170px !important;
     height: 400px !important;
+    margin-bottom: 30px !important;
 }
 
 .slide-bg {
@@ -147,21 +148,20 @@ body {
 }
 
 .slide-bg-1 {
-    background-image: url("../img/ricky-kharawala-10194-unsplash.jpg");
-}
-
-.slide-bg-2 {
     background-image: url("../img/andre-spieker-238-unsplash.jpg");
 }
 
-.slide-bg-3 {
+.slide-bg-2 {
     background-image: url("../img/david-clode-363878-unsplash.jpg");
 }
 
-.slide-bg-4 {
+.slide-bg-3 {
     background-image: url("../img/antonio-lapa-93448-unsplash.jpg");
 }
-
+/*.slide-bg-4 {
+	background-image: url("../img/antonio-lapa-93448-unsplash.jpg");
+}
+*/
 .slider2 {
     height: 100%;
 }
@@ -286,7 +286,11 @@ body {
     margin: 0 !important;
 }
 
-/*veterinars page*/
+
+
+
+
+/*VETERINARS*/
 .foto-secction {
     margin-top: 182px;
 }
@@ -313,14 +317,44 @@ body {
 }
 
 .read {
-    color: #001B17 !important;
+    color: #444444 !important;
+    font-size: 20px;
 }
 
 a {
     text-decoration: none !important;
 }
 
-/*contact*/
+.workplace-and-adress-bg {
+    color: #808080;
+    font-size: 18px;
+}
+
+.workplace-bg {
+    color: #444444;
+    font-size: 18px;
+}
+
+.doctor-name {
+    color: #444444;
+    font-size: 22px;
+}
+
+.doctor-foto1 {
+    width: 100%;
+}
+
+.text-about-veterinars {
+    color: #808080;
+    font-size: 18px;
+    padding-bottom: 80px;
+}
+
+
+
+
+
+/*CONTACT*/
 .header-text {
     font-size: 30px;
     color: #606060;
@@ -348,6 +382,24 @@ a {
     cursor: pointer;
 }
 
+.contact-form {
+    width: 100%;
+    max-width: 550px;
+    /*margin: auto;*/
+}
+
+.send-bg {
+    border: 1px solid #808080;
+    border-radius: 0.70rem;
+    background-color: #fff;
+    color: #001B17;
+}
+
+
+
+
+
+/*REGISTRATION AND LOGIN*/
 .design {
     border: 1px solid #808080 !important;
     border-radius: 0.70rem !important;
@@ -357,17 +409,8 @@ a {
     padding: 0.800rem 0.75rem !important;
 }
 
-.contact-form {
-    width: 100%;
-    max-width: 550px;
-    margin: auto;
-}
-
-.send-bg {
-    border: 1px solid #808080;
-    border-radius: 0.70rem;
-    background-color: #fff;
-    color: #001B17;
+.outline {
+    outline: none !important;
 }
 
 .contact-form2 {
@@ -432,17 +475,106 @@ a {
     background-size: 50px 18px;
 }
 
-/*Dogs page*/
+
+
+
+
+
+/*EDIT*/
+input[type="text"].active::-webkit-input-placeholder {
+    color: #606060 !important;
+    font-weight: bold !important;
+}
+
+.contact-form3 {
+    width: 100%;
+    max-width: 350px;
+}
+
+.save-bg {
+    background-color: #006641;
+    color: #fff;
+}
+/*.save-bg:hover{
+	background-color:red;
+}*/
+.edit-account {
+    color: #606060;
+    font-size: 35px;
+}
+
+
+
+
+
+
+
+/*ADD AN ADVERTISEMENT*/
+.Filter1 {
+    padding-left: 20px;
+    font-size: 17px;
+    min-width: 240px;
+    width: 240px;
+}
+
+.category-p {
+    color: #808080;
+}
+
+.star-foto {
+    width: 8px;
+}
+
+.section-in-add {
+    margin-top: 36px;
+}
+
+.section-in-add2 {
+    margin-top: 125px;
+}
+
+.medium-form {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    max-width: 160px;
+    border-radius: 0.70rem;
+}
+
+.small-form {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    max-width: 80px;
+    border-radius: 0.70rem;
+}
+
+.add-advertisement {
+    color: #444444;
+    font-size: 30px;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+/*DOGS PAGE*/
 .main-category {
     margin-top: 182px;
     height: 100%;
     padding-left: 0 !important;
     padding-right: 0 !important;
-    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
+    border-top: 2px solid lightgrey;
 }
 
 .Filter {
-    padding-left: 35px;
+    padding-left: 25px;
     padding-bottom: 234px;
     font-size: 17px;
     min-width: 257px;
@@ -451,17 +583,25 @@ a {
 }
 
 .Category-Title {
-    color: #001B17;
+    color: #444444;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 22px;
     margin-top: 20px;
+}
+
+.category-filter h2:after {
+    content: '';
+    display: block;
+    width: 80%;
+    height: 1.2px;
+    background-color: #444444;
+    margin-top: 5px;
 }
 
 .category-filter h2 {
     font-weight: bold;
-    color: #001B17;
-    text-align: center;
-    font-size: 17px;
+    color: #444444;
+    font-size: 22px;
     margin: 22px 0;
 }
 
@@ -469,19 +609,141 @@ a {
         line-height: 1.7px;
     }
 
+.category-filter p {
+    color: #808080;
+    font-size: 18px;
+}
+
 .radio label input {
     line-height: 1.7px;
     margin-right: 10px;
 }
 
+.category-filter label {
+    color: #808080;
+}
+
 .category-container {
+    margin-top: 20px;
+    padding-bottom: 35px;
+    margin-left: 20px;
+}
+
+.marketDescription {
+    color: #8C8C8C;
+}
+
+.marketBorder {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 1px 0px 10px 0px rgba(0, 0, 0, 0.19), 0px 0px 0px rgba(0, 0, 0, 0.19);
+    padding-top: 20px;
     margin-top: 20px;
 }
 
-/*Blog*/
-.dog-picture {
-    width: 100%;
+.price {
+    float: right;
+    color: red;
+    font-weight: bold;
 }
+
+.marketButton {
+    background-color: transparent;
+    border-radius: 15%;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    font-size: 12px;
+    color: #8C8C8C;
+    cursor: pointer;
+}
+
+.addCard {
+    width: 100px;
+    height: 35px;
+}
+
+.detailed {
+    width: 80px;
+    height: 35px;
+}
+
+.price-controls input {
+    width: 75px;
+    padding: 8px 10px;
+    font-size: 16px;
+    text-align: center;
+    color: #808080;
+    line-height: 1.5;
+    background-clip: padding-box;
+    border: 1px solid #808080;
+    border-radius: 0.70rem;
+}
+
+.min-price {
+    margin-right: 14px;
+}
+
+.georgian-lari {
+    display: inline-block;
+    width: 10%;
+}
+
+
+
+
+
+/*
+input[type=text]:focus, textarea:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+*/
+
+
+
+
+/*MEDIA*/
+@media(max-width:768px) {
+    .footer-text {
+        width: none;
+        max-width: none;
+    }
+}
+
+@media(max-width: 420px) {
+    .header-text,
+    .header-text2 {
+        font-size: 22px;
+    }
+}
+
+@media(max-width: 347px) {
+    .year {
+        margin-top: 10px;
+    }
+}
+
+@media(max-width: 770px) {
+    .left-colomn {
+        flex-direction: column;
+    }
+
+    .edit-information {
+        padding-top: 20px;
+    }
+}
+
+@media(max-width: 526px) {
+    .Filter1 {
+        padding-left: 0 !important;
+    }
+
+    .form-add {
+        margin-left: -60px;
+    }
+}
+
 
 .homeButton {
     background-color: transparent !important;
@@ -490,10 +752,15 @@ a {
     border: 1px solid #001B17 !important;
     margin-top: 20px;
 }
+.homeButton :hover {
+    background-color:blue !important;
+    color:black !important;
+
+}
 
 .buttonContainer1 {
-    padding-right: 20px !important;
-}
+        padding-right: 20px !important;
+    }
 
 .soc-icons {
     width: 250px;

@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using PetPaw.Models
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -20,8 +21,10 @@
     <script src="~/Scripts/jquery.validate.js"></script>
     
 
-
 </head>
+@{
+    var user = Session["user"] as user;
+}
 @RenderSection("scripts", required: false)
 <body>
     @{ 
@@ -37,8 +40,24 @@
             <div class="d-flex align-items-center">
                 <a href="#"><img src="~/img/profile-icon.svg" class="log-icon icon ml-3 mr-2" alt="login and Registration icon" id="prof-icon"></a>
                 <div class="log-reg" id="login">
-                    <a href="@Url.Action("Login","Account")" class="sign roboto mr-2">Sign in</a>
-                    <a href="@Url.Action("Registration","Account")" class="sign roboto mr-2">Registration</a>
+                    @{
+                        if (user?.Role == 100)
+                        {
+                            <a href="@Url.Action("Index", "Admin")" class="sign roboto mr-2">Admin Panel</a>
+                            <a href="@Url.Action("Logout", "Account")" class="sign roboto mr-2">Log Out</a>
+                        }
+                        else if (user != null)
+                        {
+                            <a href="@Url.Action("AddProduct", "Account")" class="sign roboto mr-2">Add product</a>
+                            <a href="@Url.Action("Logout", "Account")" class="sign roboto mr-2">Log Out</a>
+                        }
+                        else
+                        {
+                            <a href="@Url.Action("Login", "Account")" class="sign roboto mr-2">Sign in</a>
+                            <a href="@Url.Action("Registration", "Account")" class="sign roboto mr-2">Registration</a>
+                        }
+                    }
+                    
                 </div>
                 <div class="LogedIn text-center">
                     <span class="profileInitials">@(user?.firstName)</span>
@@ -111,7 +130,6 @@
         </nav>
     </header>
     @RenderBody()
-
     <!-- Footer -->
     <footer class="page-footer font-small unique-color-dark mt-3">
         <!-- Footer Links -->

@@ -6,6 +6,9 @@
     <edmx:Diagrams>
       <Diagram DiagramId="60cbe97422564af7a856430b5efb2432" Name="Diagram1">
         <EntityTypeShape EntityType="PetPawModel.user" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PetPawModel.Slider" Width="1.5" PointX="3" PointY="1.5" />
+        <EntityTypeShape EntityType="PetPawModel.sysdiagram" Width="1.5" PointX="3.375" PointY="4.75" />
+        <AssociationConnector Association="PetPawModel.FK_Slider_user" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

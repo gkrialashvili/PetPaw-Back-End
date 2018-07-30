@@ -2,7 +2,7 @@
 @{
     var user = Session["user"] as user;
     var authenticationStatusClass = user == null ? "unauthenticated" : "authenticated";
-    string userInitials = user == null ? "": Convert.ToString( user.firstName?.First() + user.lastName.First());
+    string userInitials = user == null ? "": user.firstName?.First()+ "." + user.lastName.First() + ".";
 }
 <!DOCTYPE html>
 <html>

@@ -19,7 +19,6 @@ namespace PetPaw.Models
         {
             this.Sliders = new HashSet<Slider>();
         }
-    
         public int ID { get; set; }
         public string firstName { get; set; }
         public string lastName { get; set; }
@@ -32,7 +31,6 @@ namespace PetPaw.Models
         public string profilePicture { get; set; }
         public string phoneNumber { get; set; }
         public int Role { get; set; }
-    
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Slider> Sliders { get; set; }
     }

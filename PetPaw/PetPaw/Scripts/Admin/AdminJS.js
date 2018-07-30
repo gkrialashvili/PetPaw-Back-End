@@ -6,7 +6,7 @@
     });
     
     $("#upload").click(function () {
-        var description = $("#description").val();
+        var description = $(".description").val();
         var data = new FormData();
         for (var i = 0; i < $(".addFile").length; i++) {
             var file = $(".addFile")[i].files[0];
@@ -14,19 +14,11 @@
         }
         $.ajax({
             method: "POST",
-            url: "/Admin/UploadPicture",
+            url: "/Admin/UploadPicture/" + description,
             contentType: false, // Not to set any content header
             processData: false, // Not to process data
             data: data,
             success: function (result) {
-                $.ajax({
-                    url: "/Admin/AddPictureDescription",
-                    method: "POST",
-                    data: {
-                        "id": result,
-                        "description": description
-                    }
-                });
                 if (result == true) {
                     location.href = "/Admin/AddPicture";
                     alert("Successfully Added");

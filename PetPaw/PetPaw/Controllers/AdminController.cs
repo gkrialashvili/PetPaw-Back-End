@@ -30,7 +30,7 @@ namespace PetPaw.Controllers
             return View();
         }
         [HttpPost]
-        public JsonResult UploadPicture()
+        public JsonResult UploadPicture(string id)
         {
             try
             {
@@ -54,10 +54,9 @@ namespace PetPaw.Controllers
                         CreateDate = DateTime.Now,
                         IsActive = false,
                         UserID = us.ID,
-                        Description = "temporary"
+                        Description = id
                     });
                     _db.SaveChanges();
-                    return Json(fileName);
                 }
                 return Json(true);
             }
@@ -66,14 +65,6 @@ namespace PetPaw.Controllers
                 return Json(false);
             }
             
-        }
-
-        public JsonResult AddPictureDescription(string id, string description)
-        {
-            var sliderPicture = _db.Sliders.FirstOrDefault(x => x.Name == id);
-            sliderPicture.Description = description;
-            _db.SaveChanges();
-            return Json(true);
         }
     }
 }

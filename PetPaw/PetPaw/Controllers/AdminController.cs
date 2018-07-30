@@ -66,5 +66,27 @@ namespace PetPaw.Controllers
             }
             
         }
+
+        public ActionResult ManagePictures()
+        {
+            var sliderPics = _db.Sliders;
+            return View(sliderPics);
+        }
+        public int ActivatePicture(int ID)
+        {
+            Slider picture = _db.Sliders.FirstOrDefault(x => x.ID == ID);
+            if (picture.IsActive == true)
+            {
+                picture.IsActive = false;
+                _db.SaveChanges();
+                return 0;
+            }
+            else
+            {
+                picture.IsActive = true;
+                _db.SaveChanges();
+                return 1;
+            }
+        }
     }
 }

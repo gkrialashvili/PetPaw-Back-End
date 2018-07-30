@@ -29,4 +29,21 @@
         });
 
     });
+    $(".addOrDeleteSliderPicture").on("click", function () {
+        var pictureID = $(this).data("id");
+        $.ajax({
+            url: "/Admin/ActivatePicture",
+            method: "post",
+            data: { "ID": pictureID },
+            success: function (response) {
+                if (response == 0) {
+                    $("td").find("[data-id='" + pictureID + "']").text("გააქტიურება");
+                    $("tr").find("[data-isactive='" + pictureID + "']").text("False");
+                } else {
+                    $("td").find("[data-id='" + pictureID + "']").text("დეაქტივაცია");
+                    $("tr").find("[data-isactive='" + pictureID + "']").text("True");
+                }
+            }
+        });
+    });
 });

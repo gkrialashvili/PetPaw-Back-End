@@ -1,13 +1,42 @@
-﻿<div class="container-fluid main-container">
+﻿@model IEnumerable<PetPaw.Models.Slider>
+
+<div class="container-fluid main-container">
     <div id="carouselExampleIndicators" class="carousel slide carousel-height" data-ride="carousel">
         <ol class="carousel-indicators indcation">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            @{
+                for (int i = 0; i < @Model?.Count(); i++)
+                {
+                    <li data-target="#carouselExampleIndicators" data-slide-to="@i"></li>
+                }
+            }
         </ol>
-        <div class="carousel-inner slide-bg">
-            <div class="carousel-item slide-bg-1 slide-bg active">
+        @{
+            <div class="carousel-inner slide-bg">
+                <div class="carousel-item slide-bg active" style="background-image: url('../img/ricky-kharawala-10194-unsplash.jpg')">
+                    <div class="container">
+                        <div class="carousel-caption cursor-default">
+                            <h1>Buy small pets</h1>
+                        </div>
+                    </div>
+                </div>
+                @foreach (var item in @Model)
+                {
+                    var image = "../Content/Upload/" + item.Name + ".png";
+
+                    <div class="carousel-item slide-bg" style="background-image: url(@image)">
+                        <div class="container">
+                            <div class="carousel-caption cursor-default">
+                                <h1>@item.Description</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                }
+            </div>
+        }
+        @*<div class="carousel-inner slide-bg">
+            <div class="carousel-item slide-bg active" style="background-image: url('../img/ricky-kharawala-10194-unsplash.jpg')">
                 <div class="container">
                     <div class="carousel-caption cursor-default">
                         <h1>Buy dogs</h1>
@@ -34,7 +63,7 @@
                         <h1>Buy dogs</h1>
                     </div>
                 </div>
-            </div>
+            </div>*@
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>

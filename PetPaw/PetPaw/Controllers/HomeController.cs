@@ -3,14 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using PetPaw.Models;
 
 namespace PetPaw.Controllers
 {
     public class HomeController : Controller
     {
+        PetPawEntities _db = new PetPawEntities();
         public ActionResult Index()
         {
-            return View();
+            var pictures = _db.Sliders.Where(x => x.IsActive == true);
+            return View(pictures);
         }
 
         public ActionResult About()

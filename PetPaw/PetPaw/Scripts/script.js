@@ -14,6 +14,15 @@ $(document).ready(function () {
     });
 });
 
+$("#burger-menu").on("click", function () {
+    $("#burger-menu").toggleClass("active");
+});
+$("#burger-menu").on('click', function () {
+    $(this).toggleClass("on");
+    $('#burger-menu').toggleClass("on");
+    $("nav ul").toggleClass('hidden');
+});
+
 window.addEventListener('load', () => {
     var
         carousels = document.querySelectorAll('.carousel')

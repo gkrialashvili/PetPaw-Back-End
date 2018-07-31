@@ -41,9 +41,8 @@ namespace PetPaw.Controllers
         }
         public ActionResult Market()
         {
-            ViewBag.Message = "Your application description page.";
 
-            return View();
+            return View(_db.Markets);
         }
         public ActionResult VetDetailed()
         {
@@ -58,13 +57,11 @@ namespace PetPaw.Controllers
             return View();
         }
 
-        [RoleFilter]
         public ActionResult AddPet()
         {
             return View();
         }
 
-        [RoleFilter]
         [HttpPost]
         public JsonResult AddPetPicture()
         {

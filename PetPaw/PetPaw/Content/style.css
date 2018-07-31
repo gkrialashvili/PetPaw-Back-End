@@ -834,6 +834,47 @@ input[type=text]:focus, textarea:focus {
 .LogedIn:hover {
     background-color: aqua;
 }
+.burger {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    border: 2px solid #00AF9C;
+    background-color: #00AF9C;
+}
+
+    .burger .line:first-child {
+        top: 30%;
+    }
+
+    .burger .line:last-child {
+        top: 70%;
+    }
+
+    .burger div {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        width: 45px;
+        height: 5px;
+        background-color: white;
+        transition: 0.3s linear;
+    }
+
+    .burger.active .line:first-child {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    .burger.active .line:last-child {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .burger.active .line:nth-child(2) {
+        opacity: 0;
+    }
 
 @font-face {
     font-family: 'HoboStd';

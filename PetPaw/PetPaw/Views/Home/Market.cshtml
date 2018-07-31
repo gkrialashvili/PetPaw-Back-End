@@ -1,4 +1,5 @@
 ﻿
+@model IEnumerable<PetPaw.Models.Market>
 @{
     ViewBag.Title = "Market";
 }
@@ -64,183 +65,31 @@
                 </form>
             </div>
         </div>
-
-
         <div class="category-container container roboto mr-3">
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12 marketBorder">
-                    <img class="rounded mx-auto d-block" src="~/img/canecorso.png" style=" /*height: 200px; */width: 100%; max-width: 248px;">
-                    <h1 class="productName pt-2" style="font-size: 20px; text-align: center;">
-                        Cane Corso Puppies
-                    </h1>
-                    <p class="marketDescription">
-                        Everything you want to know about Cane Corso, including: grooming, training,
-                        health problems, history
-                    </p>
-                    <p class="price">
-                        $ 100
-                    </p>
-                    </br>
-                    </br>
-                    <div class="d-flex justify-content-between mb-3">
-                        <input class="addCard marketButton box-shadow" type="button" name="addToCard" value="Save For Later">
-                        <input class="Details marketButton box-shadow" type="button" name="Details" value="Details">
-                    </div>
-                </div>
 
 
-                <div class="col-lg-4 col-md-4 col-sm-12 marketBorder">
-                    <img class="rounded mx-auto d-block" src="~/img/canecorso.png" style=" /*height: 200px; */width: 100%; max-width: 248px;">
-                    <h1 class="productName pt-2" style="font-size: 20px; text-align: center;">
-                        Cane Corso Puppies
-                    </h1>
-                    <p class="marketDescription">
-                        Everything you want to know about Cane Corso, including: grooming, training,
-                        health problems, history
-                    </p>
-                    <p class="price">
-                        $ 100
-                    </p>
-                    </br>
-                    </br>
-                    <div class="d-flex justify-content-between mb-3">
-                        <input class="addCard marketButton box-shadow" type="button" name="addToCard" value="Save For Later">
-                        <input class="Details marketButton box-shadow" type="button" name="Details" value="Details">
+                @foreach (var item in Model)
+                {
+                    <div class="col-lg-4 col-md-4 col-sm-12 marketBorder">
+                        <img class="rounded mx-auto d-block" src="~/img/@item.Picture" style=" /*height: 200px; */width: 100%; max-width: 248px;">
+                        <h1 class="productName pt-2" style="font-size: 20px; text-align: center;">
+                            @item.Title
+                        </h1>
+                        <p class="marketDescription">
+                            @item.Description
+                        </p>
+                        <p class="price">
+                            @item.Price
+                        </p>
+                        </br>
+                        </br>
+                        <div class="d-flex justify-content-between mb-3">
+                            <input class="addCard marketButton box-shadow" type="button" name="addToCard" value="Save For Later">
+                            <input class="Details marketButton box-shadow" type="button" name="Details" value="Details">
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 marketBorder">
-                    <img class="rounded mx-auto d-block" src="~/img/canecorso.png" style=" /*height: 200px; */width: 100%; max-width: 248px;">
-                    <h1 class="productName pt-2" style="font-size: 20px; text-align: center;">
-                        Cane Corso Puppies
-                    </h1>
-                    <p class="marketDescription">
-                        Everything you want to know about Cane Corso, including: grooming, training,
-                        health problems, history
-                    </p>
-                    <p class="price">
-                        $ 100
-                    </p>
-                    </br>
-                    </br>
-                    <div class="d-flex justify-content-between mb-3">
-                        <input class="addCard marketButton box-shadow" type="button" name="addToCard" value="Save For Later">
-                        <input class="Details marketButton box-shadow" type="button" name="Details" value="Details">
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 marketBorder">
-                    <img class="rounded mx-auto d-block" src="~/img/canecorso.png" style=" /*height: 200px; */width: 100%; max-width: 248px;">
-                    <h1 class="productName pt-2" style="font-size: 20px; text-align: center;">
-                        Cane Corso Puppies
-                    </h1>
-                    <p class="marketDescription">
-                        Everything you want to know about Cane Corso, including: grooming, training,
-                        health problems, history
-                    </p>
-                    <p class="price">
-                        $ 100
-                    </p>
-                    </br>
-                    </br>
-                    <div class="d-flex justify-content-between mb-3">
-                        <input class="addCard marketButton box-shadow" type="button" name="addToCard" value="Save For Later">
-                        <input class="Details marketButton box-shadow" type="button" name="Details" value="Details">
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 marketBorder">
-                    <img class="rounded mx-auto d-block" src="~/img/canecorso.png" style=" /*height: 200px; */width: 100%; max-width: 248px;">
-                    <h1 class="productName pt-2" style="font-size: 20px; text-align: center;">
-                        Cane Corso Puppies
-                    </h1>
-                    <p class="marketDescription">
-                        Everything you want to know about Cane Corso, including: grooming, training,
-                        health problems, history
-                    </p>
-                    <p class="price">
-                        $ 100
-                    </p>
-                    </br>
-                    </br>
-                    <div class="d-flex justify-content-between mb-3">
-                        <input class="addCard marketButton box-shadow" type="button" name="addToCard" value="Save For Later">
-                        <input class="Details marketButton box-shadow" type="button" name="Details" value="Details">
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 marketBorder">
-                    <img class="rounded mx-auto d-block" src="~/img/canecorso.png" style=" /*height: 200px; */width: 100%; max-width: 248px;">
-                    <h1 class="productName pt-2" style="font-size: 20px; text-align: center;">
-                        Cane Corso Puppies
-                    </h1>
-                    <p class="marketDescription">
-                        Everything you want to know about Cane Corso, including: grooming, training,
-                        health problems, history
-                    </p>
-                    <p class="price">
-                        $ 100
-                    </p>
-                    </br>
-                    </br>
-                    <div class="d-flex justify-content-between mb-3">
-                        <input class="addCard marketButton box-shadow" type="button" name="addToCard" value="Save For Later">
-                        <input class="Details marketButton box-shadow" type="button" name="Details" value="Details">
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 marketBorder">
-                    <img class="rounded mx-auto d-block"src="~/img/canecorso.png" style=" /*height: 200px; */width: 100%; max-width: 248px;">
-                    <h1 class="productName pt-2" style="font-size: 20px; text-align: center;">
-                        Cane Corso Puppies
-                    </h1>
-                    <p class="marketDescription">
-                        Everything you want to know about Cane Corso, including: grooming, training,
-                        health problems, history
-                    </p>
-                    <p class="price">
-                        $ 100
-                    </p>
-                    </br>
-                    </br>
-                    <div class="d-flex justify-content-between mb-3">
-                        <input class="addCard marketButton box-shadow" type="button" name="addToCard" value="Save For Later">
-                        <input class="Details marketButton box-shadow" type="button" name="Details" value="Details">
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 marketBorder">
-                    <img class="rounded mx-auto d-block" src="~/img/canecorso.png" style=" /*height: 200px; */width: 100%; max-width: 248px;">
-                    <h1 class="productName pt-2" style="font-size: 20px; text-align: center;">
-                        Cane Corso Puppies
-                    </h1>
-                    <p class="marketDescription">
-                        Everything you want to know about Cane Corso, including: grooming, training,
-                        health problems, history
-                    </p>
-                    <p class="price">
-                        $ 100
-                    </p>
-                    </br>
-                    </br>
-                    <div class="d-flex justify-content-between mb-3">
-                        <input class="addCard marketButton box-shadow" type="button" name="addToCard" value="Save For Later">
-                        <input class="Details marketButton box-shadow" type="button" name="Details" value="Details">
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 marketBorder">
-                    <img class="rounded mx-auto d-block" src="~/img/canecorso.png" style=" /*height: 200px; */width: 100%; max-width: 248px;">
-                    <h1 class="productName pt-2" style="font-size: 20px; text-align: center;">
-                        Cane Corso Puppies
-                    </h1>
-                    <p class="marketDescription">
-                        Everything you want to know about Cane Corso, including: grooming, training,
-                        health problems, history
-                    </p>
-                    <p class="price">
-                        $ 100
-                    </p>
-                    </br>
-                    </br>
-                    <div class="d-flex justify-content-between mb-3">
-                        <input class="addCard marketButton box-shadow" type="button" name="addToCard" value="Save For Later">
-                        <input class="Details marketButton box-shadow" type="button" name="Details" value="Details">
-                    </div>
-                </div>
+                }
             </div>
         </div>
     </div>
